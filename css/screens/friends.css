@@ -1,0 +1,12 @@
+#friends-display-link{
+    text-align:center;
+    display:block;
+    background-color:#FAFAFA;
+    padding:30px 0px 20px 0px;
+    color:#424242;
+}
+
+#friends-display-link i{
+    color:#D5D5D5;
+    padding:0px 3px;
+}
