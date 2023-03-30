@@ -18,6 +18,10 @@
     position:relative;
 }
 
+.nav__link i{
+    font-size:30px;
+}
+
 
 .nav__message-notification{
     background-color:tomato;

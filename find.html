@@ -4,7 +4,7 @@
     <link rel="stylesheet" href="css/style.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width"/>
-    <title>Chats - Kokoa Clone</title>
+    <title>Find - Kokoa Clone</title>
     <script src="https://kit.fontawesome.com/5976348e1b.js" crossorigin="anonymous"></script>
     
 </head>
@@ -27,23 +27,25 @@
         <nav class="nav">
             <ul class="nav__list">
                 <li class="nav__btn">
-                    <a class="nav__link"href="friends.html"><i class="fa-regular fa-user fa-2x"></i></a>
+                    <a class="nav__link"href="friends.html">
+                        <i class="fa-regular fa-user"></i>
+                    </a>
                 </li>
                 <li class="nav__btn">
                     <a class="nav__link"href="chats.html">
                         <span class="nav__message-notification badge">1</span>
-                        <i class="fa-solid fa-comment fa-2x"></i>
+                        <i class="fa-regular fa-comment "></i>
                     </a>
                 </li>
                 <li class="nav__btn">
                     <a class="nav__link"href="find.html">
-                        <i class="fa-solid fa-magnifying-glass fa-2x"></i>
+                        <i class="fa-solid fa-magnifying-glass"></i>
                     </a>
                 </li>
                 <li class="nav__btn">
                     <a class="nav__link"href="more.html">
-                        <i class="nav__ellipsis-notification badge--small"></i>
-                        <i class="fa-solid fa-ellipsis fa-2x"></i>
+                        <i class="nav__ellipsis-notification"></i>
+                        <i class="fa-solid fa-ellipsis"></i>
                     </a>
                 </li>
             </ul>
@@ -53,31 +55,33 @@
             <h1 class="screen-header__title">Chats</h1>
             <div class="screen-header__icons">
                 <span><i class="fa-solid fa-magnifying-glass fa-lg"></i></span>
-                <span><i class="fa-solid fa-comment-medical fa-lg"></i></span>
-                <span><i class="fa-solid fa-music fa-lg"></i></span>
-                <span><i class="fa-solid fa-gear fa-lg"></i></span>
+                <span>
+                    <i class="fa-solid fa-gear fa-lg"></i>
+                    <i class="screen-header__gear-notification badge--small"></i>
+                </span>
             </div>
         </header>
         
         <main class="main-screen">
             
-            <div class="chats-screen__chat">
-                 <div class="user-component">
-                    <div class="user-component__column">
-                        <img 
-                             src="https://upload.wikimedia.org/wikipedia/commons/e/e3/KakaoTalk_logo.svg" 
-                             class="user-component__avatar user-component__avatar"
-                        />
-                        <div class="user-component__text">
-                            <h4 class="user-component__title--chat-title">KokoaTalk</h4>
-                            <h6 class="user-component__subtitle">Please check My Kokoa Account info</h6>
-                        </div>
-                    </div>
-                    <div class="user-component__column">
-                        <span class="user-component__time">05:24</span>
-                        <span class="badge">1</span>
-                    </div>
+            <div class="find-icons">
+                <div class="find-icons__icon">
+                    <i class="fa-solid fa-qrcode"></i>
+                    <span>QR Code</span>
                 </div>
+                <div class="find-icons__icon">
+                    <i class="fa-regular fa-address-book"></i>
+                    <span>Add by</span>
+                    <span>Contacts</span>
+                </div>
+                <div class="find-icons__icon">
+                    <i class="fa-solid fa-fingerprint"></i>
+                    <span>Add by ID</span>
+                </div>
+                <div class="find-icons__icon">
+                    <i class="fa-regular fa-envelope"></i>
+                    <span>Invite</span>
+                </div>        
             </div>
             
         </main>
