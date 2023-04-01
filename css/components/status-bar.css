@@ -21,6 +21,11 @@
     justify-content:center;
 }
 
+.status-bar__column:nth-child(2) span{
+    font-weight:600;
+}
+
+
 .status-bar__column:last-child{
     display:flex;
     justify-content:flex-end;

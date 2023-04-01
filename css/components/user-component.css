@@ -39,6 +39,10 @@
     color:#9E9E9E;
 }
 
+.user-component__subtitle i{
+    color:tomato;
+}
+
 .user-component__title--not-bold{
     font-weight:400;
 }
@@ -53,6 +57,11 @@
     display:flex;
     flex-direction:column;
     align-items:flex-end;
+}
+
+.user-component__right-icon{
+    font-size:40px;
+    color:#494949;
 }
 
 .user-component__time{
