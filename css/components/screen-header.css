@@ -22,3 +22,27 @@
     right:18px;
     top:60px;
 }
+
+.screen-header--center{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:0px var(--horizontal-space);
+    margin-top:60px;
+    margin-bottom:30px;
+}
+
+.screen-header--center__title{
+    font-size:28px;
+    font-weight:600;
+    color:#191919;
+}
+
+.screen-header--center__icons span{
+    margin-left:20px;
+    color:#494949;
+}
+
+.screen-header--center__icons i{
+    color:#494949;
+}
