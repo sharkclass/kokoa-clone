@@ -1,0 +1,9 @@
+.settings-list{
+    display:flex;
+    justify-content:space-between;
+}
+
+.settings-list__column{
+    display:flex;
+    align-items:center;
+}
