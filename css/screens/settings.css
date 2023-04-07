@@ -17,6 +17,7 @@
 
 .settings-list__additional-info{
     color:var(--grey-text);
+    font-size:22px;
 }
 
 .settings-list__icon{
