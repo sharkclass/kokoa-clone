@@ -1,9 +1,26 @@
+.settings-first-block{
+    border-bottom:var(--main-border);
+    margin-bottom:40px;
+}
+
 .settings-list{
     display:flex;
     justify-content:space-between;
+    margin-bottom:40px;
 }
 
 .settings-list__column{
     display:flex;
     align-items:center;
+    font-size:30px;
+}
+
+.settings-list__additional-info{
+    color:var(--grey-text);
+}
+
+.settings-list__icon{
+    margin-right:20px;
+    width:40px;
+    color:#2F363E;
 }

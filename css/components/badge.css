@@ -18,3 +18,18 @@
     border-radius:3px;
     position:absolute;
 }
+
+.new-badge{
+    background-color:tomato;
+    border-radius:50%;
+    font-weight:600;
+    font-size:13px;
+    color:white;
+    padding:2px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    margin-left:10px;
+    width:15px;
+    height:15px;
+}
