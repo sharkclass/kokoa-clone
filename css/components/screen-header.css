@@ -23,19 +23,28 @@
     top:60px;
 }
 
+/*nicola 쌤은 alt-header라는 component 파일을 새로 만들어 새로운 헤더를 저장함-->*/
+
 .screen-header--center{
     display:flex;
-    justify-content:space-between;
     align-items:center;
     padding:0px var(--horizontal-space);
     margin-top:60px;
     margin-bottom:30px;
 }
 
+.screen-header--center__backward-icon{
+    margin-right:auto;
+}
+
 .screen-header--center__title{
     font-size:28px;
     font-weight:600;
     color:#191919;
+}
+
+.screen-header--center__icons{
+    margin-left:auto;
 }
 
 .screen-header--center__icons span{

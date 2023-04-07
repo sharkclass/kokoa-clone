@@ -13,6 +13,11 @@
     display:flex;
     align-items:center;
     font-size:30px;
+    font-weight:500;
+}
+
+.settings-list__title--chat-title{
+    font-size:20px;
 }
 
 .settings-list__additional-info{

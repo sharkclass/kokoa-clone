@@ -47,11 +47,6 @@
     font-weight:400;
 }
 
-.user-component__title--chat-title{
-    font-weight:400;
-    font-size:20px;
-}
-
 .user-component__column:last-child{
     color:rgba(0,0,0,0.5);
     display:flex;
