@@ -31,10 +31,23 @@
     padding:0px var(--horizontal-space);
     margin-top:60px;
     margin-bottom:30px;
+    justify-content:space-between;
+}
+
+.chat-screen__screen-header--center{
+    display:flex;
+    align-items:center;
+    padding:0px var(--horizontal-space);
+    margin-top:40px;
+    margin-bottom:30px;
+    position:fixed;
+    width:100%;
+    box-sizing:border-box;
 }
 
 .screen-header--center__backward-icon{
     margin-right:auto;
+    
 }
 
 .screen-header--center__title{
@@ -54,4 +67,8 @@
 
 .screen-header--center__icons i{
     color:#494949;
+}
+
+.screen-header--center__icons i:not(:first-child){
+    margin-left:20px;
 }
