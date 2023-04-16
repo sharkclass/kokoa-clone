@@ -38,26 +38,32 @@
     display:flex;
     align-items:center;
     padding:0px var(--horizontal-space);
-    margin-top:40px;
+    padding-top:40px;
     margin-bottom:30px;
     position:fixed;
     width:100%;
     box-sizing:border-box;
+    top:0;
 }
 
 .screen-header--center__backward-icon{
     margin-right:auto;
-    
+    width:33%;
 }
 
 .screen-header--center__title{
     font-size:28px;
     font-weight:600;
     color:#191919;
+    width:33%;
+    text-align:center;
 }
 
 .screen-header--center__icons{
     margin-left:auto;
+    width:33%;
+    display:flex;
+    justify-content:flex-end;
 }
 
 .screen-header--center__icons span{

@@ -2,3 +2,88 @@
     background-color:var(--chat-blue);
     height:10000vh;
 }
+
+.main-chat{
+    margin-top:120px;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+}
+
+.chat-screen .status-bar,
+.chat-screen__screen-header--center{
+    background-color:var(--chat-blue);
+}
+
+.chat__timestamp{
+    display:flex;
+    justify-content:center;
+    color:white;
+    background-color:rgba(0,0,0,0.1);
+    display:flex;
+    padding:10px 15px;
+    font-size:15px;
+    border-radius:20px;
+    margin-bottom:20px;
+}
+
+/*message part*/
+
+/*incomming-message part*/
+
+.chat__message{
+    display:flex;
+    justify-content:flex-start;
+    width:100%;
+    margin-bottom:20px;
+}
+
+.message__user-image img{
+    width:50px;
+    height:50px;
+    border-radius:35%;
+}
+
+.message__user-name{
+    color:var(--grey-text);
+    margin:0px 10px;
+    margin-bottom:8px;
+}
+
+.message__text{
+    display:flex;
+    
+}
+.message__message-bubble{
+    background-color:white;
+    padding:12px;
+    border-radius:15px;
+    margin:0px 10px;
+    border-top-left-radius:0;
+    font-weight:500;
+}
+
+.message__time{
+    color:var(--grey-text);
+    font-size:13px;
+    display:flex;
+    align-items:flex-end;
+}
+
+/*my-message part ( modifier를 이용해서 class를 추가로 만들지 않고 하나의 message class로 incomming part와
+my-message part를 만들 수 있음*/
+
+.chat__message--my-message{
+    justify-content:flex-end;
+}
+
+.chat__message--my-message .message__message-bubble{
+    background-color:var(--yellow);
+    border-top-left-radius:15px;
+    border-top-right-radius:0;
+}
+
+.chat__message--my-message .message__main-content{
+    display:flex;
+    flex-direction:row-reverse;
+}

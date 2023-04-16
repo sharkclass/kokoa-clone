@@ -9,6 +9,7 @@
     
 </head>
     <body class="chat-screen">
+        
         <div class="status-bar">
             <div class="status-bar__column">
                 <span>No Service</span>
@@ -35,16 +36,51 @@
             </div>
         </header>
         
-        <main class="main-screen">
+        <main class="main-screen main-chat">
             
+            <div class="chat__timestamp">
+                <span>Sunday, April 16, 2023</span>
+            </div>
             
+            <div class="chat__message">
+                <div class="message__user-image">
+                    <img src="img/kakaotalk-channel-logo.png">
+                </div>
+                <div class="message__main-content">
+                    <div class="message__user-name">
+                        <span>KokoaTalk</span>
+                    </div>
+                    <div class="message__text">
+                        <div class="message__message-bubble">
+                            <p>
+                            Hi! Welcome to KokoaTalk
+                            </p>
+                        </div>
+                        <span class="message__time">
+                            05:24
+                        </span>
+                    </div>
+                </div>
+            </div>
             
+            <div class="chat__message chat__message--my-message">
+                <div class="message__main-content">
+                    <div class="message__text">
+                        <div class="message__message-bubble">
+                            <p>
+                            What's up?
+                            </p>
+                        </div>
+                    </div>
+                    <span class="message__time">
+                            05:24
+                        </span>
+                </div>
+            </div>
+            
+            <div class="chat__my-message"></div>
             
         </main>
-        
-       
-       
-        
         
     </body>
 </html>
