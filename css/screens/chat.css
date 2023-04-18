@@ -87,3 +87,71 @@ my-message part를 만들 수 있음*/
     display:flex;
     flex-direction:row-reverse;
 }
+
+/*reply*/
+
+.reply{
+    position:fixed;
+    bottom:0;
+    background-color:white;
+    display:flex;
+    justify-content:space-between;
+    width:100%;
+    padding:5px 25px;
+    align-items:center;
+    box-sizing:border-box;
+    
+}
+
+.reply__column:first-child{
+    width:5%;
+}
+
+.reply__column:last-child{
+    width:95%;
+    position:relative;
+}
+
+.reply i{
+    opacity:0.5;
+}
+
+.reply input{
+    height:30px;
+    width:100%;
+    border:var(--main-border);
+    border-radius:20px;
+}
+
+.reply input::placeholder{
+    padding:10px;
+}
+
+.reply__column:last-child > i,
+.reply__column:last-child button{
+    position:absolute;
+    right:-3px;
+    top:2px;
+}
+
+.reply__column:last-child button i{
+    opacity:1;
+}
+
+.reply__column:last-child > i{
+    right:40px;
+    top:16px;
+}
+
+.reply__column:last-child button{
+    background-color:var(--yellow);
+    border-radius:50%;
+    border:0;
+    width:30px;
+    height:30px;
+}
+
+.reply__column:last-child button:focus,
+.reply__column:last-child button:active{
+        outline:none;
+}
