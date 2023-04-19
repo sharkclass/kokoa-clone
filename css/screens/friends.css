@@ -24,3 +24,31 @@
     color:rgba(0,0,0,0.5);
 }
 
+@keyframes hideSplashScreen{
+    from{
+        opacity:1;
+    }
+    to{
+        opacity:0;
+        /*animation이 끝나도 splash-screen이 화면 가장 위에 남아 있어 다른 요소를 클릭할
+        수 없음. 이를 막기 위해 visibility를 hidden으로 설정하여 다른 것들과 상호작용할 수
+        있게 함. html에서는 요소를 제거할 수 없음. 제거하기 위해서는 js를 이용해야 함.*/
+        
+        visibility:hidden;
+    }
+}
+
+#splash-screen{
+    background-color:var(--yellow);
+    position:absolute;
+    height:100vh;
+    width:100vw;
+    top:0;
+    z-index:100;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    font-size:122px;
+    animation:hideSplashScreen 0.5s ease-in-out forwards;
+    animation-delay:0.5s;
+}

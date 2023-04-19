@@ -78,3 +78,16 @@
 .screen-header--center__icons i:not(:first-child){
     margin-left:20px;
 }
+
+@keyframes rotateIcon{
+    from{
+        transform:none;
+    }
+    to{
+        transform: rotateZ(360deg);
+    }
+}
+
+.screen-header__icons .fa-gear:hover{
+    animation:rotateIcon 2s linear infinite;
+}

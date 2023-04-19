@@ -1,6 +1,5 @@
 .chat-screen{
     background-color:var(--chat-blue);
-    height:10000vh;
 }
 
 .main-chat{
@@ -123,14 +122,14 @@ my-message part를 만들 수 있음*/
     border-radius:20px;
 }
 
-.reply input::placeholder{
-    padding:10px;
+.reply input{
+    padding:0 10px;
 }
 
 .reply__column:last-child > i,
 .reply__column:last-child button{
     position:absolute;
-    right:-3px;
+    right:-15px;
     top:2px;
 }
 
@@ -139,7 +138,7 @@ my-message part를 만들 수 있음*/
 }
 
 .reply__column:last-child > i{
-    right:40px;
+    right:30px;
     top:16px;
 }
 
