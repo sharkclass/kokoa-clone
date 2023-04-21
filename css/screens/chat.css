@@ -2,6 +2,17 @@
     background-color:var(--chat-blue);
 }
 
+@keyframes fadeIn{
+    from{
+        opacity:0;
+        transform:translateY(30px);
+    }
+    to{
+        transform:none;
+        opacity:1;
+    }
+}
+
 .main-chat{
     margin-top:120px;
     display:flex;
@@ -24,6 +35,7 @@
     font-size:15px;
     border-radius:20px;
     margin-bottom:20px;
+    animation:fadeIn 0.8s linear;
 }
 
 /*message part*/
@@ -35,6 +47,21 @@
     justify-content:flex-start;
     width:100%;
     margin-bottom:20px;
+}
+
+@keyframes incommingMessage{
+    from{
+        opacity:0;
+        transform:translateX(-30px);
+    }
+    to{
+        opacity:1;
+        transform:none;
+    }
+}
+
+.chat__message--incomming-message{
+    animation:incommingMessage 0.8s linear;
 }
 
 .message__user-image img{
@@ -72,8 +99,20 @@
 /*my-message part ( modifier를 이용해서 class를 추가로 만들지 않고 하나의 message class로 incomming part와
 my-message part를 만들 수 있음*/
 
+@keyframes myMessage{
+    from{
+        opacity:0;
+        transform:translateX(30px);
+    }
+    to{
+        opacity:1;
+        transform:none;
+    }
+}
+
 .chat__message--my-message{
     justify-content:flex-end;
+    animation:myMessage 0.8s linear;
 }
 
 .chat__message--my-message .message__message-bubble{
@@ -99,7 +138,7 @@ my-message part를 만들 수 있음*/
     padding:5px 25px;
     align-items:center;
     box-sizing:border-box;
-    
+    transition:transform 0.3s ease-in-out;
 }
 
 .reply__column:first-child{
@@ -120,9 +159,7 @@ my-message part를 만들 수 있음*/
     width:100%;
     border:var(--main-border);
     border-radius:20px;
-}
-
-.reply input{
+    transition:all .3s ease-in-out;
     padding:0 10px;
 }
 
@@ -153,4 +190,25 @@ my-message part를 만들 수 있음*/
 .reply__column:last-child button:focus,
 .reply__column:last-child button:active{
         outline:none;
+}
+
+.reply:focus-within .fa-face-smile,
+.reply:focus-within button,
+.reply:focus-within .reply__column:first-child{
+    opacity:0;
+}
+
+.reply .fa-face-smile,
+.reply button,
+.reply .reply__column:first-child{
+    transition:opacity 0.3s ease-in-out;
+}
+
+.reply:focus-within input{
+    width:95vw;
+    transform:translateX(-6%) translateY(-80px);
+}
+
+.reply:focus-within{
+    transform:translateY(80px);
 }
