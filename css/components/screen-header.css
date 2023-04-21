@@ -22,3 +22,72 @@
     right:18px;
     top:60px;
 }
+
+/*nicola 쌤은 alt-header라는 component 파일을 새로 만들어 새로운 헤더를 저장함-->*/
+
+.screen-header--center{
+    display:flex;
+    align-items:center;
+    padding:0px var(--horizontal-space);
+    margin-top:60px;
+    margin-bottom:30px;
+    justify-content:space-between;
+}
+
+.chat-screen__screen-header--center{
+    display:flex;
+    align-items:center;
+    padding:0px var(--horizontal-space);
+    padding-top:40px;
+    margin-bottom:30px;
+    position:fixed;
+    width:100%;
+    box-sizing:border-box;
+    top:0;
+}
+
+.screen-header--center__backward-icon{
+    margin-right:auto;
+    width:33%;
+}
+
+.screen-header--center__title{
+    font-size:28px;
+    font-weight:600;
+    color:#191919;
+    width:33%;
+    text-align:center;
+}
+
+.screen-header--center__icons{
+    margin-left:auto;
+    width:33%;
+    display:flex;
+    justify-content:flex-end;
+}
+
+.screen-header--center__icons span{
+    margin-left:20px;
+    color:#494949;
+}
+
+.screen-header--center__icons i{
+    color:#494949;
+}
+
+.screen-header--center__icons i:not(:first-child){
+    margin-left:20px;
+}
+
+@keyframes rotateIcon{
+    from{
+        transform:none;
+    }
+    to{
+        transform: rotateZ(360deg);
+    }
+}
+
+.screen-header__icons .fa-gear:hover{
+    animation:rotateIcon 2s linear infinite;
+}

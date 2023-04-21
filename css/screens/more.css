@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 .more-screen .icon-row{
     margin-top:40px;
 }
@@ -37,4 +38,11 @@
 .more-suggestions__icon-image{
     font-size:32px;
     color:white;
+=======
+
+
+.suggestion-header{
+    margin-top:30px;
+    font-size:18px;
+>>>>>>> my-own-version
 }

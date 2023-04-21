@@ -100,3 +100,37 @@
     bottom:10px;
 }
 
+@keyframes hearthBeat{
+    0%{
+        color:white;
+        transform:none;
+    }
+    50%{
+        color:red;
+        transform:scale(1.5);
+    }
+    100%{
+        color:white;
+        transform:none;
+    }
+}
+
+@keyframes hearthChange{
+    0%{
+        transform:none;
+        color:white;
+    }
+    50%{
+        transform:rotateY(180deg) scale(1.5);
+        color:red;
+    }
+    0%{
+        transform:none;
+        color:white;
+    }
+}
+
+.open-post__photo__heart-count:hover i{
+    will-change:transform;
+    animation:hearthChange 2s ease-in-out infinite;
+}

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="css/style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width"/>
+    <title>Chat - Kokoa Clone</title>
+    <script src="https://kit.fontawesome.com/5976348e1b.js" crossorigin="anonymous"></script>
+    
+</head>
+    <body class="chat-screen">
+        
+        <div class="status-bar">
+            <div class="status-bar__column">
+                <span>No Service</span>
+                <i class="fa-solid fa-wifi"></i>
+            </div>
+            <div class="status-bar__column">
+                <span>05:24</span>
+            </div>
+            <div class="status-bar__column">
+                <span>110%</span>
+                <i class="fa-solid fa-battery-full fa-lg"></i>
+                <i class="fa-solid fa-bolt-lightning"></i>
+            </div>
+        </div>
+        
+        <header class="chat-screen__screen-header--center">
+            <a href="chats.html" class="screen-header--center__backward-icon">
+                <i class="fa-solid fa-chevron-left fa-2x"></i>
+            </a>
+            <h1 class="screen-header--center__title">KokoaTalk</h1>
+            <div class="screen-header--center__icons">
+                <i class="fa-solid fa-magnifying-glass fa-2x"></i>
+                <i class="fa-solid fa-bars fa-2x"></i>
+            </div>
+        </header>
+        
+        <main class="main-screen main-chat">
+            
+            <div class="chat__timestamp">
+                <span>Sunday, April 16, 2023</span>
+            </div>
+            
+            <div class="chat__message chat__message--incomming-message">
+                <div class="message__user-image">
+                    <img src="img/kakaotalk-channel-logo.png">
+                </div>
+                <div class="message__main-content">
+                    <div class="message__user-name">
+                        <span>KokoaTalk</span>
+                    </div>
+                    <div class="message__text">
+                        <div class="message__message-bubble">
+                            <p>
+                            Hi! Welcome to KokoaTalk
+                            </p>
+                        </div>
+                        <span class="message__time">
+                            05:24
+                        </span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="chat__message chat__message--my-message">
+                <div class="message__main-content">
+                    <div class="message__text">
+                        <div class="message__message-bubble">
+                            <p>
+                            What's up?
+                            </p>
+                        </div>
+                    </div>
+                    <span class="message__time">
+                            05:24
+                        </span>
+                </div>
+            </div>
+            
+        </main>
+        
+        <from class="reply">
+            <div class="reply__column">
+                <i class="fa-regular fa-square-plus fa-lg"></i>
+            </div>
+            <div class="reply__column">
+                <input type="text" placeholder="Write a message...">
+                <i class="fa-regular fa-face-smile fa-lg"></i>
+                <button>
+                    <i class="fa-solid fa-arrow-up fa-lg"></i>
+                </button>
+            </div>
+        </from>
+        
+        
+    </body>
+</html>
