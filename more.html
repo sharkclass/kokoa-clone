@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-<head type="text/css">
+<head>
     <link rel="stylesheet" href="css/style.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width"/>
@@ -56,13 +56,15 @@
                 <span><i class="fa-solid fa-magnifying-glass fa-lg"></i></span>
                 <span><i class="fa-solid fa-music fa-lg"></i></span>
                 <span>
-                    <i class="fa-solid fa-gear fa-lg"></i>
-                    <i class="screen-header__gear-notification badge--small"></i>
+                    <a href="setting.html">
+                        <i class="fa-solid fa-gear fa-lg"></i>
+                        <i class="screen-header__gear-notification badge--small"></i>
+                    </a>
                 </span>
             </div>
         </header>
         
-        <main class="main-screen more-screen">
+        <main class="main-screen">
             
             <div class="user-component">
                 <div class="user-component__column">
@@ -80,49 +82,74 @@
                 </div>
             </div>
             
-            <div class="icon-row">
-                <div class="icon-row__icon">
-                    <i class="fa-regular fa-calendar-check"></i>
-                    <span>Calender</span>
+            <div class="menu-selection">
+                <div class="menu-selection__column">
+                    <div class="menu-selection__column__row">
+                        <i class="fa-regular fa-calendar-check"></i>
+                        <span>Calender</span>
+                    </div>
+                     <div class="menu-selection__column__row">
+                        <i class="fa-regular fa-id-card"></i>
+                        <span>Account</span>
+                    </div>
+                </div>    
+                <div class="menu-selection__column">
+                    <div class="menu-selection__column">
+                        <div class="menu-selection__column__row">
+                            <i class="fa-solid fa-box-archive"></i>
+                            <i class="menu-selection__badge badge--small"></i>
+                            <span>Talk Drive</span>
+                        </div>
+                    </div>
+                    <div class="menu-selection__column__row">
+                        <i class="fa-regular fa-comments"></i>
+                        <span>Openchat</span>
+                    </div>
                 </div>
-                <div class="icon-row__icon">
-                    <i class="fa-solid fa-box-archive"></i>
-                    <span>Talk Drive</span>
+                <div class="menu-selection__column">
+                    <div class="menu-selection__column__row">
+                        <i class="fa-regular fa-face-smile-wink"></i>
+                        <span>Emoticons</span>
+                    </div>
                 </div>
-                <div class="icon-row__icon">
-                    <i class="fa-regular fa-face-smile-wink"></i>
-                    <span>Emoticons</span>
+                <div class="menu-selection__column">
+                    <div class="menu-selection__column__row">
+                        <i class="fa-solid fa-brush"></i>
+                        <span>Themes</span>
+                    </div>
                 </div>
-                <div class="icon-row__icon">
-                    <i class="fa-solid fa-brush"></i>
-                    <span>Themes</span>
-                </div>        
             </div>
-
             
-            <div class="more-suggestions">
-                <h4 class="more-suggestions__title">Suggestions</h4>
-                <div class="more-suggestions__icons">
-                    <div class="more-suggestions__icon">
-                        <div class="more-suggestions__icon-image">
-                            <i class="fas fa-quote-right"></i>
+            <div class="suggestion">
+                <h4 class="suggestion-header">Suggestions</h4>
+                
+                <div class="menu-selection suggestion__menu-selection">
+                    <div class="menu-selection__column">
+                        <div class="menu-selection__column__row">
+                            <img class="menu-selection__suggestion-logo" src="img/kakao-story-logo.png">
+                            <span class="menu-selection__suggestion-name">Kakao Story</span>
                         </div>
-                        <span class="more-suggestions__icon-text">Kokoa Story</span>
-                    </div>
-                    <div class="more-suggestions__icon">
-                        <div class="more-suggestions__icon-image">
-                            <i class="fas fa-quote-right"></i>
+                         
+                    </div>    
+                    <div class="menu-selection__column">
+                        <div class="menu-selection__column__row">
+                            <img class="menu-selection__suggestion-logo" src="img/kakao-friends-logo.png">
+                            <span class="menu-selection__suggestion-name">Kakao Friends</span>
                         </div>
-                        <span class="more-suggestions__icon-text">Kokoa Story</span>
                     </div>
-                    <div class="more-suggestions__icon">
-                        <div class="more-suggestions__icon-image">
-                            <i class="fas fa-quote-right"></i>
+                    <div class="menu-selection__column">
+                        <div class="menu-selection__column__row">
+                            <img class="menu-selection__suggestion-logo" src="img/kakao-games-logo.jpg">
+                            <span class="menu-selection__suggestion-name">Kakao Games</span>
                         </div>
-                        <span class="more-suggestions__icon-text">Kokoa Story</span>
                     </div>
-                    
+                    <div class="menu-selection__column">
+                        <div class="menu-selection__column__row">
+                            <span class="menu-selection__column__row__blank"></span>
+                        </div>
+                    </div>
                 </div>
+                
             </div>
             
         </main>
