@@ -9,13 +9,11 @@
 @import "components/screen-header.css";
 @import "components/user-component.css";
 @import "components/badge.css";
-<<<<<<< HEAD
 @import "components/icon-row.css";
 @import "components/alt-screen-header.css";
-=======
 @import "components/menu-selection.css";
 @import "components/no-mobile.css";
->>>>>>> my-own-version
+
 
 /* Screens */
 @import "screens/login.css";
